@@ -1,5 +1,7 @@
 package com.luxoft.springioc.lab2.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 public class UsualPerson implements Person {
@@ -42,6 +44,7 @@ public class UsualPerson implements Person {
         return country;
     }
 
+    @Autowired
     public void setCountry(Country country) {
         this.country = country;
     }
